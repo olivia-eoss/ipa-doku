@@ -1,5 +1,5 @@
 ---
-title: Ausgangslage
+title: Vorbereitung
 prev: "Zurück zu Ausgangslage"
 next: "Weiter zu Durchführung"
 ---

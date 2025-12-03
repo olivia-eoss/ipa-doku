@@ -13,6 +13,9 @@ export default defineConfig({
 		lang: 'de',
 		}
 	},
+	components: {
+  		Header: './src/components/Header.astro',
+	},
 
 		customCss: [
 			// Path to your custom CSS file
