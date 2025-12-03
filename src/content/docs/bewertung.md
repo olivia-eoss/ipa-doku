@@ -1,6 +1,7 @@
 ---
 title: Ausgangslage
-description: A guide in my new Starlight docs site.
+prev: "Zurück zur Durchführen"
+next: false
 ---
 
 ---

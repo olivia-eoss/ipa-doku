@@ -27,3 +27,147 @@
 	--sl-color-gray-7: #fff2f8;
 	--sl-color-black: #ffffff;
 }
+
+/* ===============================
+   BASE TYPOGRAPHY
+================================ */
+
+html {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+body {
+  color: var(--sl-color-gray-1);
+  background-color: var(--sl-color-black);
+}
+
+/* ===============================
+   HEADLINES
+================================ */
+
+/* Gemeinsamer Stil für alle Überschriften */
+h1, h2, h3, h4 {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+/* Seitentitel (ganz oben) */
+h1 {
+  font-size: 2.1rem;
+  color: var(--sl-color-accent);
+  margin-bottom: 0.8rem;
+}
+
+/* Große Abschnittstitel: ## */
+h2 {
+  font-size: 1.4rem;
+  color: var(--sl-color-accent-high);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Untertitel / Bullet-Überschriften: ### */
+h3 {
+  font-size: 1.15rem;
+  color: var(--sl-color-gray-3);
+  margin-top: 1.8rem;
+  margin-bottom: 1px;
+}
+
+/* Noch kleinere Zwischenüberschrift, falls du mal #### brauchst */
+h4 {
+  font-size: 1rem;
+  color: var(--sl-color-gray-2);
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Abstand vor H3-Überschriften verringern */
+.sl-markdown-content .sl-heading-wrapper.level-h3 {
+  margin-top: 0.8rem;  /* oder 0, wenn du gar keinen Abstand willst */
+}
+
+/* Optional: Generellen Extra-Abstand nach Paragraph entfernen */
+.sl-markdown-content :not(h1, h2, h3, h4, h5, h6, .sl-heading-wrapper) + .sl-heading-wrapper {
+  margin-top: 1rem;  /* oder 0; */
+}
+
+
+
+/* ===============================
+   TEXT
+================================ */
+
+p {
+  margin-bottom: 1.1rem;
+  color: var(--sl-color-gray-1);
+  margin-top: 0;
+}
+
+strong {
+  color: var(--sl-color-accent-high);
+  font-weight: 600;
+}
+
+/* ====== SIDEBAR STYLING ====== */
+
+/* Hintergrund der Sidebar */
+nav.sidebar {
+  background: var(--sl-color-black);
+}
+
+/* alle Links in der Sidebar */
+nav.sidebar a {
+  display: block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  color: var(--sl-color-gray-3);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+/* Hover-Effekt */
+nav.sidebar a:hover {
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+}
+
+/* Aktiver Menüpunkt (Die aktuelle Seite) */
+nav.sidebar a[aria-current="page"] {
+  background: var(--sl-color-accent);
+  color: var(--sl-color-black);
+  font-weight: 600;
+}
+
+
+/* ===============================
+   PREV / NEXT BUTTONS
+================================ */
+
+.sl-pagination {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.sl-pagination a {
+  border-radius: 16px;
+  background: var(--sl-color-accent-low);
+  border: 1px solid var(--sl-color-accent);
+  padding: 1rem 1.3rem;
+  transition: all 0.2s ease;
+}
+
+.sl-pagination a:hover {
+  background: var(--sl-color-accent);
+  color: var(--sl-color-black);
+}
+
+.sl-pagination small {
+  opacity: 0.8;
+  font-size: 0.75rem;
+}

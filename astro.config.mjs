@@ -7,6 +7,12 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'MY IPA',
+	locales: {
+		root: {
+		label: 'Deutsch',
+		lang: 'de',
+		}
+	},
 
 		customCss: [
 			// Path to your custom CSS file

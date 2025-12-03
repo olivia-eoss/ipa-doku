@@ -1,6 +1,7 @@
 ---
 title: Ausgangslage
-description: A guide in my new Starlight docs site.
+prev: false
+next: "Weiter zur Durchführung"
 ---
 
 ## AUSGANGSL AGE: DIE WICHTIGSTEN PUNKTE

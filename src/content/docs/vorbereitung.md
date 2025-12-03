@@ -1,6 +1,7 @@
 ---
 title: Ausgangslage
-description: A guide in my new Starlight docs site.
+prev: "Zurück zu Ausgangslage"
+next: "Weiter zu Durchführung"
 ---
 
 ## IPA-AUFGABENSTELLUNG
@@ -23,19 +24,24 @@ damit das Einverständnis zur gestellten Aufgabe.
 
 ## WAS EIGNET SICH NICHT ALS IPA?
 
-**Die Kandidatin oder der Kandidat formuliert die Aufgabe selbst:**
+### Die Kandidatin oder der Kandidat formuliert die Aufgabe selbst:
+
 Bleibt auf ersten Gedanken fixiert.
 
-**Fiktiver Kunde:**
+### Fiktiver Kunde:
+
 Schwammige, minimalistische Anforderungen; wenig Motivation.
 
-**Unbekannte Arbeiten oder Produkte:**
+### nbekannte Arbeiten oder Produkte:
+
 Zu viel Einarbeitungszeit; Anfängerlösungen (Beispiel: es soll nur ein Video als IPA gewählt werden, wenn es im Betrieb wirklich gelernt und unter kundiger Leitung angewendet wurde).
 
-**Zu einfache Aufgaben:**
+### Zu einfache Aufgaben:
+
 Müssen besonders gut gelöst und dokumentiert werden (Planung, Varianten).
 
-**Konzept als einziges Produkt:**
+### Konzept als einziges Produkt:
+
 Nicht die Idee auf Stufe EFZ (praktisches Handwerk).
 
 ## DETAILLIERTE AUFGABENSTELLUNG
@@ -52,3 +58,21 @@ müssen ersichtlich sein.
 Es müssen folgende Teile beschrieben werden:
 
 ### Ausgangslage & Problemstellung
+
+Mit der Beschreibung der Ausgangslage wird das gewünschte Projekt
+aufgezeigt. Es ist ersichtlich, in welchem Umfeld es durchgeführt wird.
+Eine Problemstellung soll erläutert werden.
+
+### Detaillierte Aufgabenstellung
+
+Der Block detaillierte Aufgabenstellung ist das Kernstück der Beschrei-
+bung. In die detaillierte Aufgabenstellung gehören folgende Informa-
+tionen: konkrete Lieferobjekte, grobe Aufgabenpakete mit zugeordne-
+ten HKB und messbare Formatvorgaben (z.B. Format einer Broschüre,
+Videodauer, Exportvorgaben, etc.). Je klarer dieser Text formuliert ist,
+umso schneller geht die Validierung. Der Detailierungsgrad soll einem
+Briefing an einen externen Dienstleister/Agentur entsprechen, der die
+Firma nicht kennt und muss von einer externen Fachperson bewertbar
+sein. Anhand der Definition der Ziele wird die Arbeit von der VF und den
+PEX bewertet. Besonderes Augenmerk ist auf die Messbarkeit der Ziele
+zu legen.
