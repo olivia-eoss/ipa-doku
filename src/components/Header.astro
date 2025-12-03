@@ -19,7 +19,6 @@ const shouldRenderSearch =
     <SiteTitle />
   </div>
 
-  <!-- HIER: zusätzliche Klasse search-wrapper -->
   <div class="sl-flex print:hidden search-wrapper">
     {shouldRenderSearch && <Search />}
   </div>
@@ -38,13 +37,11 @@ const shouldRenderSearch =
     height: 100%;
   }
 
-  /* Der Wrapper rechts vom Logo */
   .search-wrapper {
-    flex: 0 0 380px; /* nimmt fix ~380px Platz ein */
+    flex: 0 0 380px;
     max-width: 420px;
   }
 
-  /* Das eigentliche Such-Element */
   .search-wrapper site-search {
     width: 100%;
   }

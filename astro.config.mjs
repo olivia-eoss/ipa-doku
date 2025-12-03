@@ -18,7 +18,6 @@ export default defineConfig({
 	},
 
 		customCss: [
-			// Path to your custom CSS file
 			'./src/styles/style.css',
 		],
       sidebar: [
