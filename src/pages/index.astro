@@ -1,8 +1,20 @@
 ---
 import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import Timeline from "../components/Timeline.astro";
 ---
 
-<StarlightPage frontmatter={{ title: "Home", template: "splash" }}>
-  <h1>Haaaaallllllloooooooo</h1>
-  <p>Willkommen auf meiner IPA-Startseite 🎓</p>
+<StarlightPage
+  frontmatter={{
+    title: "Willkommen auf meiner IPA-Startseite 🎓",
+    template: "splash",
+  }}
+>
+  <p>Alles was du bruachst findest du hier</p>
+  <p>
+    Diese Dokumentation beschreibt meine individuelle praktische Arbeit (IPA)
+    vollständig und nachvollziehbar. Hier findest du alle Informationen zur
+    Ausgangslage, Planung, Durchführung sowie zur Bewertung meines Projekts. Mit
+    dieser anleitung können Sie selbst ein IPA Projekt machen.
+  </p>
+  <Timeline />
 </StarlightPage>

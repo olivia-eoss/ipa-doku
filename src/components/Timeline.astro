@@ -1,0 +1,113 @@
+---
+const steps = [
+  {
+    title: "Informationsveranstaltung",
+    date: "05.11.2025, 17:30",
+    who: "für Lernende und Betriebe",
+    text: "Obligatorische Infoveranstaltung. Ablauf und Organisation der IPA werden erklärt.",
+  },
+  {
+    title: "Grob­beschreibung einreichen",
+    date: "bis 22.01.2026",
+    who: "Verantwortliche Fachkraft",
+    text: "Titel und kurze Beschreibung der IPA im System erfassen. Startblock wählen.",
+  },
+  {
+    title: "Detaillierte Aufgabenstellung",
+    date: "…",
+    who: "Betrieb & Kandidat/in",
+    text: "Konkrete Aufgabe, Rahmenbedingungen und Abgrenzung festhalten.",
+  },
+];
+---
+
+<section class="ipa-timeline">
+  {
+    steps.map((step, index) => (
+      <article class="ipa-step">
+        <div class="ipa-step-pill">
+          <div class="ipa-step-date">
+            <span class="ipa-step-number">{index + 1}</span>
+            <p class="ipa-step-main">{step.date}</p>
+            <p class="ipa-step-who">{step.who}</p>
+          </div>
+
+          <div class="ipa-step-content">
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</section>
+
+<style>
+  .ipa-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-block: 3rem 4rem;
+  }
+
+  /* KACHEL */
+  .ipa-step-pill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+
+    padding: 2rem 2.5rem;
+    border-radius: 999px;
+
+    background: var(--sl-color-accent-low); /* NUR EINE FARBE */
+    border: 2px solid var(--sl-color-accent);
+  }
+
+  /* LINKER TEIL */
+  .ipa-step-date {
+    min-width: 260px;
+  }
+
+  .ipa-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: var(--sl-color-accent);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .ipa-step-main {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--sl-color-accent);
+    margin: 0;
+  }
+
+  .ipa-step-who {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    color: var(--sl-color-gray-4);
+  }
+
+
+
+
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .ipa-step-pill {
+      border-radius: 28px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.6rem;
+    }
+
+    .ipa-step-d
+
