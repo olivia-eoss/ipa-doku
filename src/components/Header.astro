@@ -1,0 +1,51 @@
+---
+import config from "virtual:starlight/user-config";
+
+import SiteTitle from "@astrojs/starlight/components/SiteTitle.astro";
+import Search from "@astrojs/starlight/components/Search.astro";
+import ThemeSelect from "@astrojs/starlight/components/ThemeSelect.astro";
+import Nav from "./Nav.astro";
+
+/**
+ * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
+ */
+const shouldRenderSearch =
+  config.pagefind ||
+  config.components.Search !== "@astrojs/starlight/components/Search.astro";
+---
+
+<div class="header">
+  <div class="title-wrapper sl-flex">
+    <SiteTitle />
+  </div>
+
+  <!-- HIER: zusätzliche Klasse search-wrapper -->
+  <div class="sl-flex print:hidden search-wrapper">
+    {shouldRenderSearch && <Search />}
+  </div>
+
+  <Nav />
+  <div class="sl-hidden md:sl-flex print:hidden right-group">
+    <ThemeSelect />
+  </div>
+</div>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Der Wrapper rechts vom Logo */
+  .search-wrapper {
+    flex: 0 0 380px; /* nimmt fix ~380px Platz ein */
+    max-width: 420px;
+  }
+
+  /* Das eigentliche Such-Element */
+  .search-wrapper site-search {
+    width: 100%;
+  }
+</style>
